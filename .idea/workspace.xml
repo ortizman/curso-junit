@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9e459cc-5a74-4622-9873-91506e7133b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d9e459cc-5a74-4622-9873-91506e7133b5" name="Changes" comment="Curso JUnit 5. Parte 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/biblioteca/entities/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/biblioteca/entities/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/com/biblioteca/services/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/com/biblioteca/services/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/com/biblioteca/services/LoanServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/com/biblioteca/services/LoanServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,18 +40,18 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.LoanServiceImplTest.testCreateLoanBook">
+}]]></component>
+  <component name="RunManager" selected="JUnit.LoanServiceImplTest.testCreateRandomLoanBook">
     <configuration name="LoanServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="curso-junit" />
       <extension name="coverage">
@@ -78,21 +83,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanServiceImplTest.testCreateLoanBookFromInvalidBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="curso-junit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoanServiceTest" />
-      <option name="METHOD_NAME" value="createLeanBooks" />
-      <option name="TEST_OBJECT" value="class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.biblioteca.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.biblioteca.services" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.biblioteca.services.LoanServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateLoanBookFromInvalidBook" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoanServiceTest.createLeanBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanServiceImplTest.testCreateLoanBookWithNonExistentBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="curso-junit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoanServiceTest" />
-      <option name="METHOD_NAME" value="createLeanBooks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.biblioteca.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.biblioteca.services" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.biblioteca.services.LoanServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateLoanBookWithNonExistentBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanServiceImplTest.testCreateRandomLoanBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="curso-junit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.com.biblioteca.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.com.biblioteca.services" />
+      <option name="MAIN_CLASS_NAME" value="ar.com.biblioteca.services.LoanServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateRandomLoanBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,10 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoanServiceTest.createLeanBooks" />
-        <item itemvalue="JUnit.LoanServiceTest" />
-        <item itemvalue="JUnit.LoanServiceImplTest.testCreateLoanBook" />
+        <item itemvalue="JUnit.LoanServiceImplTest.testCreateRandomLoanBook" />
         <item itemvalue="JUnit.LoanServiceImplTest" />
+        <item itemvalue="JUnit.LoanServiceImplTest.testCreateLoanBook" />
+        <item itemvalue="JUnit.LoanServiceImplTest.testCreateLoanBookWithNonExistentBook" />
+        <item itemvalue="JUnit.LoanServiceImplTest.testCreateLoanBookFromInvalidBook" />
       </list>
     </recent_temporary>
   </component>
@@ -116,6 +150,38 @@
       <option name="presentableId" value="Default" />
       <updated>1696564780516</updated>
     </task>
+    <task id="LOCAL-00001" summary="Curso JUnit 5. Parte 1">
+      <option name="closed" value="true" />
+      <created>1698878362475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698878362475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Curso JUnit 5. Parte 1">
+      <option name="closed" value="true" />
+      <created>1698878401131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698878401131</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Curso JUnit 5. Parte 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Curso JUnit 5. Parte 1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ar/com/biblioteca/services/LoanServiceImpl.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
